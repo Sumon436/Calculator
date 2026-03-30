@@ -23,15 +23,37 @@ class HomePage extends StatelessWidget {
             children: [
               const ThemeChangeBtn(),
               Row(
-                children: [
-                  Text(
-                    "Welcome 😊",
-                    style: TextStyle(
-                      color: Theme.of(context).colorScheme.onSecondaryContainer,
-                    ),
-                  )
-                ],
-              ),
+  children: [
+    Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          "Welcome 😊",
+          style: TextStyle(
+            color: Theme.of(context).colorScheme.onSecondaryContainer,
+            fontSize: 14,
+          ),
+        ),
+        Text(
+          "━━━━━━━━━━━━━━━",
+          style: TextStyle(
+            color: Colors.blue,
+            fontSize: 12,
+          ),
+        ),
+        Text(
+          "Created by Saiful Islam Sumon",
+          style: TextStyle(
+            fontSize: 13,
+            color: Colors.blueGrey,
+            fontStyle: FontStyle.italic,
+            letterSpacing: 1.2,
+          ),
+        ),
+      ],
+    )
+  ],
+),
               Row(
                 children: [
                   Text(
